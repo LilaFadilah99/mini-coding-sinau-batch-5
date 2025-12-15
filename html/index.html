@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Dasar</title>
+  </head>
+  <body>
+    <!-- CTRL + / untuk menampilkan tag coment -->
+    <!-- ini comment -->
+    <p class="first-text" id="text-info">Ini adalah codingan pertama ku</p>
+
+    <!-- Tag Heading -->
+    <h1>Ini tag h1</h1>
+    <h2>Ini tag h2</h2>
+    <h3>Ini tag h3</h3>
+    <h4>Ini tag h4</h4>
+    <h5>Ini tag h5</h5>
+    <h6>Ini tag h6</h6>
+
+    <!-- Tag Paragraf -->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+    <!-- Tag Link/Anchor -->
+    <a href="https://sinaukoding.co.id/" target="_blank">Jelajahi website Sinau Coding</a>
+
+    <!-- Tag List -->
+    <!-- 1. Ordered List -->
+    <ol>
+      <li>Ini list pertama</li>
+      <li>Ini list kedua</li>
+    </ol>
+
+    <!-- 2. Unordered List -->
+    <ul>
+      <li>Ini list pertama</li>
+      <li>Ini list kedua</li>
+    </ul>
+
+    <!-- Tag Image -->
+    <img src="https://hips.hearstapps.com/hmg-prod/images/ginger-maine-coon-kitten-running-on-lawn-in-royalty-free-image-1719608142.jpg?crop=1xw:0.84415xh;0,0.185xh&resize=1200:*" alt="Cat" />
+
+    <!-- Tag Video -->
+    <video width="320" height="240" poster="https://hips.hearstapps.com/hmg-prod/images/ginger-maine-coon-kitten-running-on-lawn-in-royalty-free-image-1719608142.jpg?crop=1xw:0.84415xh;0,0.185xh&resize=1200:*" autoplay controls>
+      <source src="" />
+    </video>
+
+    <!-- Tag Table -->
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Kota</th>
+        <th>Hobi</th>
+      </tr>
+      <tr>
+        <td>Dila</td>
+        <td>Tangerang Selatan</td>
+        <td>Membaca</td>
+      </tr>
+      <tr>
+        <td>Mely</td>
+        <td>Bekasi</td>
+        <td>Menulis</td>
+      </tr>
+    </table>
+
+    <!-- Tag Form -->
+    <div>
+      <h2>Add New Transaction</h2>
+
+      <form action="">
+        <!-- transaction name -->
+        <div>
+          <label for="transaction-name">Transaction Name</label>
+          <input type="text" placeholder="Enter transaction name" required />
+        </div>
+
+        <!-- amount -->
+        <div>
+          <label for="amount">Amount (Rp)</label>
+          <input type="text" placeholder="Amount" required />
+        </div>
+
+        <!-- transaction type -->
+        <div>
+          <label for="transaction-type">Transaction Type</label>
+          <div>
+            <input type="radio" name="type" value="income" checked />
+            <label for="income">Income</label>
+          </div>
+          <div>
+            <input type="radio" name="type" value="expense" />
+            <label for="expense">Expense</label>
+          </div>
+        </div>
+
+        <!-- select category -->
+        <div>
+          <label for="category">Category</label>
+          <select name="category" id="category">
+            <option value="">Select Category</option>
+            <optgroup label="Income">
+              <option value="salary">Salary</option>
+              <option value="freelance">Freelance</option>
+            </optgroup>
+
+            <optgroup label="Expense">
+              <option value="food">Food</option>
+              <option value="transport">Transport</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- date -->
+        <div>
+          <label for="date">Date</label>
+          <input type="date" required />
+        </div>
+
+        <!-- button add -->
+        <button type="submit">+ Add Transaction</button>
+      </form>
+    </div>
+  </body>
+</html>
