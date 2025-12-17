@@ -1,0 +1,17 @@
+.inline-box {
+  display: inline;
+  background-color: lightblue;
+  width: 200px; /* Akan diabaikan */
+  height: 100px; /* Akan diabaikan */
+  margin-top: 20px; /* Akan diabaikan */
+  padding-top: 20px; /* Akan diabaikan */
+  padding-left: 10px; /* Ini masih berlaku */
+  border: 1px solid blue;
+}
+
+.box-inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}

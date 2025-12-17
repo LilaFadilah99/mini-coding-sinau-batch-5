@@ -1,0 +1,57 @@
+/* position relative */
+.inline-block {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+  top: 40px;
+}
+
+/* position absolute */
+.small-square {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  width: 80px;
+  background: yellow;
+}
+
+.medium-square {
+  height: 200px;
+  width: 300px;
+  background: red;
+}
+
+.big-square {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background: deepskyblue;
+}
+
+/* position fixed */
+
+.fixed {
+  position: fixed;
+  top: 100px;
+  width: 300px;
+  padding: 10px 20px;
+  background: #73ad21;
+}
+
+/* position sticky */
+.sticky {
+  position: sticky;
+  top: 30px;
+  padding: 5px;
+  background-color: yellow;
+  border: 2px solid blue;
+}
+.content {
+  height: 100vh;
+}

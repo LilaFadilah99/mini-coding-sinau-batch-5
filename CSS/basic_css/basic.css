@@ -1,0 +1,42 @@
+.paragraf-text {
+  background-color: blueviolet;
+}
+
+h4 {
+  color: coral;
+}
+
+/* Class Selector */
+.description-box {
+  background-color: chocolate;
+  border: 2px solid black;
+  font-size: 20px;
+}
+
+/* Id Selector */
+#text-information {
+  color: white;
+  background-color: purple;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Multiple Selector */
+h5,
+h6 {
+  text-align: center;
+}
+
+/* Semua elemen */
+/* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+/* Box Model */
+.box {
+  padding: 20px;
+  border: 3px solid blue;
+  margin: 30px;
+  background-color: lightyellow;
+}

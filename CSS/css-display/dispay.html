@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display</title>
+    <link rel="stylesheet" href="display.css" />
+  </head>
+  <body>
+    <!-- 
+    1. display: block; 
+
+    Setiap elemen baru akan turun ke baris baru
+    Contoh elemen block: <div>, <p>, <h1>
+    -->
+    <div style="display: block">Satu</div>
+    <div style="display: block">Dua</div>
+
+    <!-- 
+    2. display: inline; 
+
+    Elemen tampil dalam satu baris, berdempetan
+    Contoh elemen inline: <span>, <a>, <strong>
+    Tidak bisa diatur width, height, margin-top/bottom, padding-top/bottom
+    -->
+    <span style="display: inline">Halo</span>
+    <span style="display: inline">Dunia</span>
+    <span class="inline-box">Ini elemen inline</span>
+    <span class="inline-box">Lihat ukurannya</span>
+
+    <!-- 
+    3. display: inline-block;
+    Gabungan block dan inline. Bisa ditampilkan bersebelahan, dalam satu baris
+    Tapi juga bisa diatur ukurannya (width, height, padding, dll)
+    -->
+
+    <div class="box-inline-block">Box 1</div>
+    <div class="box-inline-block">Box 2</div>
+
+    <!-- 
+   4. display: none;
+    Elemen tidak akan ditampilkan sama sekali di halaman. Seolah-olah tidak ada
+    -->
+    <div style="display: none">Ini tidak terlihat</div>
+  </body>
+</html>

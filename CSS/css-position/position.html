@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
+    <!-- 
+    1. Relative
+    Element dengan posisi relative akan diposisikan relatif dari posisi normalnya. 
+    Kita bisa memberikan properti top, right, bottom, dan left
+    -->
+    <div class="inline-block"></div>
+    <div class="inline-block relative"></div>
+    <div class="inline-block"></div>
+
+    <!-- 
+    2. Absolute
+    Kita bisa membuat element saling menimpa satu sama lain.
+    Ibaratnya: seperti stiker yang bisa kamu tempel bebas di papan mana saja.
+    -->
+    <div class="big-square">
+      <div class="medium-square">
+        <div class="small-square"></div>
+      </div>
+    </div>
+
+    <!-- 
+    3. Fixed
+    akan selalu berada di tempat yang sama jika walaupun halaman website di-scroll
+    -->
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <div class="fixed">This div element has position: fixed;</div>
+    </div>
+
+    <!-- 4. Sticky posisinya nomrla, tapi saat di scrolling tidak akan berpindah -->
+    <p>Cobalah scroll halaman website ini</p>
+
+    <div class="sticky">I am sticky!</div>
+
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </body>
+</html>
