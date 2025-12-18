@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Demo</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      #output {
+        margin-top: 10px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="judul">Halo, Dunia!</h1>
+    <button id="ubah">Ubah Judul</button>
+    <button id="tambah">Tambah Paragraf</button>
+    <button id="hapus">Hapus Paragraf</button>
+
+    <div id="output"></div>
+
+    <script>
+      // Akses elemen
+      const judul = document.getElementById("judul");
+      const output = document.getElementById("output");
+
+      // Event: Ubah isi elemen
+      document.getElementById("ubah").addEventListener("click", () => {
+        judul.textContent = "Judul Sudah Diubah!";
+      });
+
+      // Event: Tambah elemen
+      document.getElementById("tambah").addEventListener("click", () => {
+        const p = document.createElement("p");
+        p.textContent = "Paragraf baru ditambahkan!";
+        p.className = "paragraf";
+        output.appendChild(p);
+      });
+
+      // Event: Hapus elemen
+      document.getElementById("hapus").addEventListener("click", () => {
+        const lastP = document.querySelector("#output .paragraf:last-child");
+        if (lastP) {
+          output.removeChild(lastP);
+        } else {
+          alert("Tidak ada paragraf untuk dihapus!");
+        }
+      });
+    </script>
+  </body>
+</html>
